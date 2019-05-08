@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Осин](https://up.htmlacademy.ru/htmlcss/25/user/937889).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://up.htmlacademy.ru/htmlcss/25/user/id241239).
 
 ---
 
