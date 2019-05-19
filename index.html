@@ -75,21 +75,25 @@
       <section class="map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <img class="map-image" src="img/map.jpg" alt="Карта местности Седоны">
+          <!-- какое то еще описание к карте можно придумать, как в примере с барбершоп или же оставить так? можно так: Седона находится на севере штата Аризона в США
+          в 46 км от Флагстаффа на юг, в 168 км от южного рима Гранд Каньона, в 254 км от Пейджа и Каньона Антилопы,
+           в 186 км от Финикса на север, в 450 км на восток от Лас-Вегаса и 770 км от Лос-Анджелеса. но что то как то много букв-->
       </section>
 
     	<section class="hotel-search">
           <h2>Заинтересовались?</h2>
     	    <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    		<button class="hotel-search-link">Поиск гостиницы в Седоне</button>
+    		  <button class="hotel-search-link" disabled>Поиск гостиницы в Седоне</button>
+          <!-- Это точно кнопка? сделаю ее неактивной-->
             <!-- Здесь будет форма -->
       </section>
     </main>
 	<footer class="main-footer">
-		<p class="hash-tag">#Visitsedona</p>
+		<p class="hash-tag-visitsedona">#Visitsedona</p>
 		  <ul class="footer-social">
-			  <li><a class="social-button" href="https://twitter.com/sedonathebest">Твиттер</a></li>
-			  <li><a class="social-button" href="https://www.facebook.com/sedonathebest">Фейсбук</a></li>
-			  <li><a class="social-button" href="https://www.youtube.com/user/sedonathebest">Ютуб</a></li>
+        <li><a class="social-button" href="https://twitter.com/sedonathebest" title="Мы в Твиттер">Твиттер</a></li>
+			  <li><a class="social-button" href="https://www.facebook.com/sedonathebest" title="Мы в Фейсбук">Фейсбук</a></li>
+			  <li><a class="social-button" href="https://www.youtube.com/user/sedonathebest" title="Мы в Ютюб">Ютуб</a></li>
 		  </ul>
 		  <!--Иконки в backgroung-image-->
 		<p class="footer-copyright">
@@ -101,27 +105,30 @@
 
 	<section class="modal-search">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <div class="modal-inputs">
-	    <p class="date-arrive">
-		  <label>Дата заезда:</label>
-		  <input/>
-		</p>
-		<p class="date-leave">
-		  <label>Дата выезда:</label>
-		  <input/>
-		</p>
-	    <p class="adults">
-		  <label>Взрослые:</label>
-		  <input/>
-		</p>
-	    <p class="kids">
-		  <label>Дети:</label>
-		  <input/>
-		</p>
-		<button class="search-button">Найти</button>
-	  </div>
-      <!-- Здесь будет форма -->
-	  <!-- Иконки в backgroung-image -->
+      <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
+        <p class="hotel-search-date-arrive">
+          <label for="hotel-search-date-arrive">Дата заезда:</label>
+          <input id="hotel-search-date-arrive" type="date" name="date-arrive" value="" placeholder="24.04.2017"/>
+          <!-- валидатор регается на placeholder у date -->
+        </p>
+        <p class="hotel-search-date-leave">
+          <label for="hotel-search-date-leave">Дата выезда:</label>
+          <input id="hotel-search-date-leave" type="date" name="date-leave" value="" placeholder="04.07.2017"/>
+        </p>
+        <p class="adults">
+          <label for="adults">Взрослые:</label>
+          <!-- спрятать стрелочки в css -->
+          <input id="adults" type="number" name="adults-number" value="" placeholder="2"/>
+        </p>
+        <p class="kids">
+          <label>Дети:</label>
+          <!-- спрятать стрелочки в css -->
+          <input id="kids" type="number" name="kids-number" value="" placeholder="0"/>
+        </p>
+        <button class="search-button">Найти</button>
+      </form>
+        <!-- Здесь будет форма -->
+  	  <!-- Иконки в backgroung-image -->
     </section>
   </body>
 </html>
