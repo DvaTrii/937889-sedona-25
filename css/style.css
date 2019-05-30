@@ -1,0 +1,398 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.welcome-section {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #ffffff;
+  background-image: url("../img/bg-mount.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 800px;
+}
+
+/* .welcome-section img - как управлять положением пока не знаю */
+
+.slogans {
+  margin-left: 40px;
+  width: 1200px;
+  height: 216px;
+  background-color: #ffffff;
+}
+
+.slogan-underrated {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.heading-reasons {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+
+
+.container-advantages-1 {
+  width: 400px;
+  height: 256px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.container-advantages-1 h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-advantages-1 p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.list-item-1 {
+  background-color: #ffffff;
+  background-image: url("../img/feature-picture-1.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  /* width: 1200px;
+  height: 256px; */
+}
+/* можно ли потом разделить и разместить картинку и голубой фон в потоке? */
+/* .container-to-do-list {
+  height: 330px;
+  width: 1200px;
+  background-color: #ffffff;
+} */
+
+.to-do-list {
+  list-style: none;
+}
+
+.to-do-list-1 {
+  height: 330px;
+  width: 400px;
+  background-color: #ffffff;
+}
+
+.to-do-list-2 {
+  height: 330px;
+  width: 400px;
+  background-color: #ffffff;
+}
+
+.to-do-list-3 {
+  height: 330px;
+  width: 400px;
+  background-color: #ffffff;
+}
+
+.to-do-list .heading-to-do-list {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.to-do-list .item-to-do-list {
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.list-item-2 {
+  background-color: #ffffff;
+  background-image: url("../img/feature-picture-2.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+/* можно ли потом разделить и разместить картинку и голубой фон в потоке? аналогичный вопрос*/
+
+.container-advantages-2 {
+  width: 400px;
+  height: 256px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  background-position: right center;
+}
+
+.container-advantages-2 .heading-advantages {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-advantages-2 p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container-advantages-3 {
+  width: 400px;
+  height: 256px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.container-advantages-3 h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-advantages-3 p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+.container-advantages-4 {
+  width: 400px;
+  height: 256px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.container-advantages-4 h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-advantages-4 p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+.container-advantages-5 {
+  width: 400px;
+  height: 256px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.container-advantages-5 h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-advantages-5 p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+.hotel-search {
+  background-color: #ffffff;
+}
+
+.hotel-search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.hotel-search p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.hotel-search-button {
+  font: inherit;
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 568px;
+  height: 86px;
+}
+
+.hotel-search-button:hover {
+  background-color: #604e43;
+}
+
+
+.hotel-search-button:active {
+  background-color: #503e33;
+  color: #766860;
+  /* color: #ffffff;
+  opacity: 0.3; */
+}
+
+.main-footer {
+  opacity: 0.9;
+  background-color: #ffffff;
+}
+
+.hash-tag-visitsedona {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+
+
+.social-button {
+  color: #81b3d2;
+}
+
+.social-button:hover {
+  color: #669ec0;
+}
+
+.social-button:active {
+  color: #5496bd;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #000000;
+}
+
+.footer-copyright a{
+  color: inherit;
+}
+
+.footer-copyright a:hover {
+  color: #81b3d2;
+}
+
+.footer-copyright a:active {
+  color: #bdbbbc;
+}
+
+.modal-search {
+  width: 568px;
+  height: 395px;
+  font: inherit;
+  background-color: #ffffff
+
+}
+
+.hotel-search-item input {
+  width: 346px;
+  height: 38px;
+}
+
+.hotel-search-guest input {
+  width: 144px;
+  height: 38px;
+}
+
+.hotel-search-item input,
+.hotel-search-guest input {
+
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+
+
+.hotel-search-item input:hover,
+.hotel-search-guest input:hover {
+
+  background-color: #ebebeb;
+}
+
+.hotel-search-item input:focus,
+.hotel-search-guest input:focus {
+  background-color: transparent;
+  border: solid 2px #e5e5e5;
+}
+
+.search-button {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.search-button:hover {
+  background-color: #669ec0;
+}
+
+.search-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}

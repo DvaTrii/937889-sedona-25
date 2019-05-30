@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Добро пожаловать в Sedona</title>
-	<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
-	<header class="main-header">
-	  <a class="main-header-logo">
-      <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
-    </a>
-	  <nav class="main-navigation">
+  	<header class="main-header">
+  	  <a class="main-header-logo">
+        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
+      </a>
+  	  <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и Видео</a></li>
@@ -23,55 +26,82 @@
       <section class="welcome-section">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
         <img class="sedona-welcome.svg" src="img/sedona-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+        <p class="visually-hidden">Because the Grand<br>Canyon sucks</p>
         <!--Изображение гор в background-->
       </section>
       <div class="slogans">
-    	  <p class="slogan-better-than-Canyon">Because the Grand<br>Canyon sucks</p>
     	  <p class="slogan-underrated">Седона - небольшой городок в Аризоне,<br>заслуживающий большего</p>
+        <h2 class="heading-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       </div>
     	<section class="advantages">
-    		<h2 class="heading-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-    	    <ol>
-    		  <li>
-            <h3 class="heading-advantages">Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
+
+    	  <ol class="advantages-list">
+          <!-- <div list-item-container> -->
+    		  <li class="list-item-1">
+              <div class="container-advantages-1">
+                <h3 class="heading-advantages">Настоящий городок</h3>
+                <p>— №1 —</p>
+                <p>Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
+              </div>
           </li>
+
     		  <!--Картинка в backgroung-image-->
-          <li>
+          <li class="container-to-do-list">
             <h2 class="visually-hidden">Чем заняться</h2>
             <ul class="to-do-list">
-        		  <li><h3 class="heading-to-do-list">Жилье</h3><p class="item-to-do-list">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
-        		  <li><h3 class="heading-to-do-list">Еда</h3><p class="item-to-do-list">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
-        		  <li><h3 class="heading-to-do-list">Сувениры</h3><p class="item-to-do-list">Не только китайского, но и местного производства!</p></li>
+        		  <li class="to-do-list-1">
+                <h3 class="heading-to-do-list">Жилье</h3>
+                <p class="item-to-do-list">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
+              </li>
+        		  <li class="to-do-list-2">
+                <h3 class="heading-to-do-list">Еда</h3>
+                <p class="item-to-do-list">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+              </li>
+        		  <li class="to-do-list-3">
+                <h3 class="heading-to-do-list">Сувениры</h3>
+                <p class="item-to-do-list">Не только китайского, но и местного<br>производства!</p>
+              </li>
         		</ul>
       		  <!--Иконки в backgroung-image-->
           </li>
-          <li>
-            <h3 class="heading-advantages">Там есть Мост дьявола</h3>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+          <li class="list-item-2">
+            <div class="container-advantages-2">
+              <h3 class="heading-advantages">Там есть Мост дьявола</h3>
+              <p>— №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+            </div>
           </li>
     		  <!--Картинка в backgroung-image-->
-    		  <li>
-            <h3 class="heading-advantages">Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности  находятся<br>очень близко</p>
+    		  <li class="list-item-3">
+            <div class="container-advantages-3">
+              <h3 class="heading-advantages">Небольшая площадь</h3>
+              <p>— №3 —</p>
+              <p>Все достопримечательности находятся<br>очень близко</p>
+            </div>
           </li>
-    		  <li>
-            <h3 class="heading-advantages">Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно</p>
+    		  <li class="list-item-4">
+            <div class="container-advantages-4">
+              <h3 class="heading-advantages">Красивая дорога</h3>
+              <p>— №4 —</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно</p>
+            </div>
           </li>
-    	 	  <li>
-            <h3 class="heading-advantages">Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в гранд каньон<br>и толпится там</p>
+    	 	  <li class="list-item-5">
+            <div class="container-advantages-5">
+              <h3 class="heading-advantages">Мало туристов</h3>
+              <p>— №5 —</p>
+              <p>Большинство едет в гранд каньон<br>и толпится там</p>
+            </div>
           </li>
     		</ol>
     	</section>
-
-
+    	<section class="hotel-search">
+          <h2>Заинтересовались?</h2>
+    	    <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    		  <button class="hotel-search-button">Поиск гостиницы в Седоне</button>
+          <!-- Это точно кнопка? сделаю ее неактивной-->
+            <!-- Здесь будет форма -->
+      </section>
       <section class="map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <img class="map-image" src="img/map.jpg" alt="Карта местности Седоны">
@@ -79,56 +109,48 @@
           в 46 км от Флагстаффа на юг, в 168 км от южного рима Гранд Каньона, в 254 км от Пейджа и Каньона Антилопы,
            в 186 км от Финикса на север, в 450 км на восток от Лас-Вегаса и 770 км от Лос-Анджелеса. но что то как то много букв-->
       </section>
-
-    	<section class="hotel-search">
-          <h2>Заинтересовались?</h2>
-    	    <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    		  <button class="hotel-search-link" disabled>Поиск гостиницы в Седоне</button>
-          <!-- Это точно кнопка? сделаю ее неактивной-->
-            <!-- Здесь будет форма -->
-      </section>
     </main>
-	<footer class="main-footer">
-		<p class="hash-tag-visitsedona">#Visitsedona</p>
-		  <ul class="footer-social">
-        <li><a class="social-button" href="https://twitter.com/sedonathebest" title="Мы в Твиттер">Твиттер</a></li>
-			  <li><a class="social-button" href="https://www.facebook.com/sedonathebest" title="Мы в Фейсбук">Фейсбук</a></li>
-			  <li><a class="social-button" href="https://www.youtube.com/user/sedonathebest" title="Мы в Ютюб">Ютуб</a></li>
-		  </ul>
-		  <!--Иконки в backgroung-image-->
-		<p class="footer-copyright">
-		  <b>Website by</b>
-		  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-		</p>
+  	<footer class="main-footer">
+  		<p class="hash-tag-visitsedona">#Visitsedona</p>
+  		  <ul class="footer-social">
+          <li><a class="social-button" href="https://twitter.com/sedonathebest" title="Мы в Твиттер">Твиттер</a></li>
+  			  <li><a class="social-button" href="https://www.facebook.com/sedonathebest" title="Мы в Фейсбук">Фейсбук</a></li>
+  			  <li><a class="social-button" href="https://www.youtube.com/user/sedonathebest" title="Мы в Ютюб">Ютуб</a></li>
+  		  </ul>
+  		  <!--Иконки в backgroung-image-->
+  		<p class="footer-copyright">
+  		  <b>Website by</b>
+  		  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+  		</p>
 
-	</footer>
+  	</footer>
 
-	<section class="modal-search">
-      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
-        <p class="hotel-search-date-arrive">
-          <label for="hotel-search-date-arrive">Дата заезда:</label>
-          <input id="hotel-search-date-arrive" type="date" name="date-arrive" value="" placeholder="24.04.2017"/>
-          <!-- валидатор регается на placeholder у date -->
-        </p>
-        <p class="hotel-search-date-leave">
-          <label for="hotel-search-date-leave">Дата выезда:</label>
-          <input id="hotel-search-date-leave" type="date" name="date-leave" value="" placeholder="04.07.2017"/>
-        </p>
-        <p class="adults">
-          <label for="adults">Взрослые:</label>
-          <!-- спрятать стрелочки в css -->
-          <input id="adults" type="number" name="adults-number" value="" placeholder="2"/>
-        </p>
-        <p class="kids">
-          <label>Дети:</label>
-          <!-- спрятать стрелочки в css -->
-          <input id="kids" type="number" name="kids-number" value="" placeholder="0"/>
-        </p>
-        <button class="search-button">Найти</button>
-      </form>
-        <!-- Здесь будет форма -->
-  	  <!-- Иконки в backgroung-image -->
-    </section>
+  	<section class="modal-search">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="hotel-search-item">
+            <label for="hotel-search-date-arrive">Дата заезда:</label>
+            <input id="hotel-search-date-arrive" type="date" name="date-arrive" value="" placeholder="24 апреля 2017"/>
+            <!-- валидатор регается на placeholder у date -->
+          </p>
+          <p class="hotel-search-item">
+            <label for="hotel-search-date-leave">Дата выезда:</label>
+            <input id="hotel-search-date-leave" type="date" name="date-leave" value="" placeholder="04 июля 2017"/>
+          </p>
+          <p class="hotel-search-guest">
+            <label for="adults">Взрослые:</label>
+            <!-- спрятать стрелочки в css -->
+            <input id="adults" type="number" name="adults-number" value="" placeholder="2"/>
+          </p>
+          <p class="hotel-search-guest">
+            <label for="kids">Дети:</label>
+            <!-- спрятать стрелочки в css -->
+            <input id="kids" type="number" name="kids-number" value="" placeholder="0"/>
+          </p>
+          <button class="search-button">Найти</button>
+        </form>
+          <!-- Здесь будет форма -->
+    	  <!-- Иконки в backgroung-image -->
+      </section>
   </body>
 </html>
