@@ -8,9 +8,10 @@
 	  <link href="css/style.css" rel="stylesheet">
 
   </head>
+  <div class="page-container">
   <body>
   	<header class="main-header">
-  	  <a class="main-header-logo">
+      <a class="main-header-logo">
         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
       </a>
   	  <nav class="main-navigation">
@@ -24,12 +25,17 @@
     </header>
     <main class="container">
       <section class="welcome-section">
-        <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-        <img class="sedona-welcome.svg" src="img/sedona-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
-        <p class="visually-hidden">Because the Grand<br>Canyon sucks</p>
+        <!-- <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1> -->
+        <img class="sedona-welcome-picture" src="img/sedona-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+        <svg  class="welcome-trace" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 57">
+            <path fill="#fff" d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z"/>
+        </svg>
+        <!-- <img class="welcome-trace" src="img/trace.svg" width="1200" height="57" alt=""> -->
+        <!-- <p class="visually-hidden">Because the Grand<br>Canyon sucks</p> -->
         <!--Изображение гор в background-->
       </section>
       <div class="slogans">
+
     	  <p class="slogan-underrated">Седона - небольшой городок в Аризоне,<br>заслуживающий большего</p>
         <h2 class="heading-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       </div>
@@ -100,36 +106,33 @@
     	</section>
     	<section class="hotel-search">
           <h2>Заинтересовались?</h2>
-    	    <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    	    <p class="search-info">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     		  <button class="hotel-search-button button-brown">Поиск гостиницы в Седоне</button>
-          <!-- Это точно кнопка? сделаю ее неактивной-->
             <!-- Здесь будет форма -->
       </section>
       <section class="map">
-          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <!-- <h2 class="visually-hidden">Как до нас добраться</h2> -->
           <img class="map-image" src="img/map.jpg" alt="Карта местности Седоны">
-          <!-- какое то еще описание к карте можно придумать, как в примере с барбершоп или же оставить так? можно так: Седона находится на севере штата Аризона в США
-          в 46 км от Флагстаффа на юг, в 168 км от южного рима Гранд Каньона, в 254 км от Пейджа и Каньона Антилопы,
-           в 186 км от Финикса на север, в 450 км на восток от Лас-Вегаса и 770 км от Лос-Анджелеса. но что то как то много букв-->
       </section>
     </main>
   	<footer class="main-footer">
-  		<p class="hash-tag-visitsedona">#Visitsedona</p>
-  		  <ul class="footer-social">
-          <li><a class="social-button" href="https://twitter.com/sedonathebest" title="Мы в Твиттер">Твиттер</a></li>
-  			  <li><a class="social-button" href="https://www.facebook.com/sedonathebest" title="Мы в Фейсбук">Фейсбук</a></li>
-  			  <li><a class="social-button" href="https://www.youtube.com/user/sedonathebest" title="Мы в Ютюб">Ютуб</a></li>
-  		  </ul>
-  		  <!--Иконки в backgroung-image-->
-  		<p class="footer-copyright">
-  		  <b>Website by</b>
-  		  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-  		</p>
-
+      <div class="container">
+    		<p class="hash-tag-visitsedona">#Visitsedona</p>
+    		  <ul class="footer-social">
+            <li><a class="social-button" href="https://twitter.com/sedonathebest" title="Мы в Твиттер">Твиттер</a></li>
+    			  <li><a class="social-button" href="https://www.facebook.com/sedonathebest" title="Мы в Фейсбук">Фейсбук</a></li>
+    			  <li><a class="social-button" href="https://www.youtube.com/user/sedonathebest" title="Мы в Ютюб">Ютуб</a></li>
+    		  </ul>
+    		  <!--Иконки в backgroung-image-->
+    		<p class="footer-copyright">
+    		  <b>Website by</b>
+    		  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    		</p>
+    </div>
   	</footer>
 
   	<section class="modal-search">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <!-- <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2> -->
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="hotel-search-item">
             <label for="hotel-search-date-arrive">Дата заезда:</label>
@@ -156,4 +159,5 @@
     	  <!-- Иконки в backgroung-image -->
       </section>
   </body>
+  </div>
 </html>
