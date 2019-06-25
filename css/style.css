@@ -8,21 +8,44 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
-
+/* убирает подсветку у всех ссылок */
 a {
   text-decoration: none;
 }
+/* запрещает картинкам вываливаться за границы родительских блоков */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* типовой вижуаллихиден 2019 */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* подсветка для блоков */
+
+/* background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
+
 
 .page-container {
   margin: 0 auto;
   background-color: #ffffff;
   width: 1200px;
-}
-
-
-
-.site-navigation-current {
-  color: #766357;
 }
 
 .main-header,
@@ -45,6 +68,10 @@ a {
 
 .site-navigation a:active {
   opacity: 0.3;
+}
+
+.site-navigation .site-navigation-current {
+  color: #766357;
 }
 
 
@@ -71,29 +98,41 @@ a {
 
 .advantages-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 
 
 .container-advantages {
+  box-sizing: border-box;
   width: 400px;
   height: 256px;
   color: #ffffff;
   background-color: #81b3d2;
+  padding-top: 47px;
+  padding-bottom: 65px;
+  text-align: center;
+  margin: 0;
+}
+
+.list-item-2 .container-advantages {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .container-advantages h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .container-advantages p {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .list-item-1 {
@@ -115,6 +154,7 @@ a {
   line-height: 21px;
   text-align: center;
   color: #000000;
+  position: relative;
 }
 
 .to-do-list .item-to-do-list {
@@ -209,6 +249,7 @@ a {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+  padding-top: 11px;
   color: #000000;
 }
 
@@ -217,26 +258,51 @@ a {
 }
 
 .footer-social {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 6px;
+  padding: 0;
+  list-style: none;
 }
 
 
 
 .social-button {
-  color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin-right: 6px;
 }
 
 .social-button:hover {
-  color: #669ec0;
+  background-color: #669ec0;
 }
 
 .social-button:active {
-  color: #5496bd;
+  background-color: #5496bd;
 }
 
 .footer-copyright {
   text-align: center;
   color: #000000;
+  padding-top: 11px;
+}
+
+.footer-copyright a {
+  position: relative;
+}
+
+.footer-copyright a::after {
+  content: url('../img/logo-htmla.svg');
+  position: absolute;
+  top: -12px;
+  left: 8px;
+  height: 41px;
+  width: 115px;
 }
 
 .footer-copyright a{
@@ -346,7 +412,7 @@ a {
   color: #ffffff;
 }
 
-.filter-range {
+/* .filter-range {
   width: 158px;
   height: 32px;
   border: solid 2px #ffffff;
@@ -363,19 +429,23 @@ a {
 .filter-button:hover {
   background-color: #ffffff;
   color: #000000;
-}
+} */
 
 .sort-select {
   color: #000000;
   opacity: 0.3;
+  border-bottom: 1px dotted black;
 }
 
 .sort-select:hover {
   color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-select:active {
   color: #000000;
+  opacity: 1;
+  border: none;
 }
 
 ul {
@@ -407,14 +477,13 @@ ul {
 }
 
 .button-about {
-  width: 110px;
-  height: 27px;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   background-color: #81b3d2;
   text-align: center;
   color: #ffffff;
+  padding: 4px 17px 3px 17px;
 }
 
 
@@ -425,17 +494,17 @@ ul {
   background-color: #766357;
   text-align: center;
   color: #ffffff;
+  padding: 4px 17px 3px 17px;
 }
 
 .hotels-item-rating {
-  width: 110px;
-  height: 27px;
   background-color: #f2f2f2;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #666666;
   text-align: center;
+  padding: 4px 13px 3px 16px;
 }
 
 /* =============== сеточные стили ===========================*/
@@ -498,7 +567,7 @@ ul {
 }
 
 .sedona-welcome-picture {
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
 
 
@@ -506,10 +575,11 @@ ul {
   box-sizing: border-box;
   height: 215px;
   padding-top: 62px;
-  padding-bottom: 50px;
+  padding-bottom: 56px;
 }
 
 .slogan-underrated {
+  margin-top: 0;
   margin-bottom: 22px;
 }
 
@@ -545,7 +615,7 @@ ul {
   padding: 36px 0;
 }
 
-.main-footer .container {
+.main-footer .footer-container {
   display: flex;
 }
 
@@ -565,6 +635,70 @@ ul {
   width: 400px;
 }
 
+.to-do-list {
+  margin: 0;
+  padding: 0;
+}
+
+.to-do-list {
+  display: flex;
+  justify-content: center;
+}
+
+.to-do-list li {
+  width: 400px;
+  text-align: center;
+  padding-top: 165px;
+  padding-bottom: 86px;
+}
+
+.to-do-list-1 h3::before {
+  content: url('../img/icon-house.svg');
+  position: absolute;
+  top: -99px;
+  left: 162px;
+}
+
+.to-do-list-2 h3::before {
+  content: url('../img/icon-food.svg');
+  position: absolute;
+  top: -99px;
+  left: 163px;
+}
+
+.to-do-list-3 h3::before {
+  content: url('../img/icon-present.svg');
+  position: absolute;
+  top: -102px;
+  left: 167px;
+}
+
+.list-item-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.list-item-container li {
+  width: 400px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 63px;
+}
+
+
+
+/* =============== сеточные стили ===========================*/
+/* =============== сеточные стили ===========================*/
+/* =============== сеточные стили footer ===========================*/
+
+.footer-social a {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
 
 /* =============== сеточные стили ===========================*/
@@ -574,5 +708,301 @@ ul {
 
 .hotels {
   height: 453px;
-  width: 1200px;
 }
+
+.hotels-item {
+  display: flex;
+  box-sizing: border-box;
+  height: 151px;
+  padding: 30px 72px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-item-image {
+  margin-right: 30px;
+}
+
+.hotels-item-class {
+  margin-left: auto;
+}
+
+.hotels-info-container {
+  box-sizing: border-box;
+}
+
+.hotels-info-container h3,
+.hotels-info-container p {
+  margin: 0;
+
+}
+
+.hotels-info-container h3 {
+  margin-top: -3px;
+  margin-bottom: 2px;
+}
+
+.hotels-info-container p {
+  margin-bottom: 12px;
+}
+
+.hotels-buttons-container {
+  box-sizing: border-box;
+  margin: 15px auto;
+  /* блочно строчиные отрисовывают пробелы поэтому обнуляем размер шрифта у контейнера но возвращаем его у элемента */
+  /* font-size: 0;   */
+}
+
+.button-book,
+.button-about {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 3px;
+}
+
+
+.hotels-item-type,
+.hotels-item-price {
+  display: inline-block;
+  width: 110px;
+  text-align: left;
+  margin-right: 3px;
+}
+
+.rating-stars {
+  padding: 0;
+  text-align: right;
+  margin-bottom: 35px;
+}
+
+.rating-stars li {
+  display: inline-block;
+}
+
+/* =============== сеточные стили ===========================*/
+/* =============== сеточные стили ===========================*/
+/* =============== сеточные стили hotels фильтры===========================*/
+
+
+
+
+.filter {
+  display: flex;
+  box-sizing: border-box;
+  padding: 29px 74px 35px 72px;
+}
+
+.filter-infrastructure {
+
+}
+
+.filter-result {
+  display: flex;
+  height: 87px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 72px;
+  padding-right: 73px;
+  vertical-align: baseline;
+
+}
+
+.filter-result-sort-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-result-amount {
+  margin-right: 53px;
+  margin-top: 31px;
+}
+
+.filter-result li {
+  margin-right: 35px;
+  margin-top: 39px;
+
+}
+
+.filter-result-sort-container:first-of-type {
+  margin-right: 40px;
+}
+
+.filter-result a {
+  border-bottom:
+}
+
+.filter-arrows svg:hover #arrow-up,
+.filter-arrows svg:hover #arrow-down {
+  fill: #000000;
+}
+
+.filter-arrows svg:active #arrow-up,
+.filter-arrows svg:active #arrow-down {
+  fill: #81b3d2;
+}
+
+.filter-arrows-container {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.filter-arrows-container li {
+  margin-top: 39px;
+  margin-bottom: 37px;
+  margin-right: 12px;
+}
+
+.filter-arrows-container li:last-of-type {
+  margin-right: 0;
+}
+
+
+/* ===============  стили для фильтра стоимости ===========================*/
+
+.filter-range {
+  margin-left: auto;
+}
+
+.filter-range {
+  width: 330px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/* ===============  стили для фильтра стоимости ===========================*/
+/* ===============  end ===========================*/

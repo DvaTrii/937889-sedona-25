@@ -25,13 +25,13 @@
     </header>
     <main class="container">
       <section class="welcome-section">
-        <!-- <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1> -->
+        <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
         <img class="sedona-welcome-picture" src="img/sedona-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         <svg  class="welcome-trace" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 57">
             <path fill="#fff" d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z"/>
         </svg>
-        <!-- <img class="welcome-trace" src="img/trace.svg" width="1200" height="57" alt=""> -->
-        <!-- <p class="visually-hidden">Because the Grand<br>Canyon sucks</p> -->
+
+        <p class="visually-hidden">Because the Grand<br>Canyon sucks</p>
         <!--Изображение гор в background-->
       </section>
       <div class="slogans">
@@ -83,7 +83,7 @@
               <div class="container-advantages-grey">
                 <h3 class="heading-advantages">Небольшая площадь</h3>
                 <p>— №3 —</p>
-                <p>Все достопримечательности находятся<br>очень близко</p>
+                <p>Все достопримечательности<br>находятся очень близко</p>
               </div>
               </li>
         		  <li class="list-item-grey">
@@ -111,28 +111,51 @@
             <!-- Здесь будет форма -->
       </section>
       <section class="map">
-          <!-- <h2 class="visually-hidden">Как до нас добраться</h2> -->
+          <h2 class="visually-hidden">Как до нас добраться</h2>
           <img class="map-image" src="img/map.jpg" alt="Карта местности Седоны">
       </section>
     </main>
   	<footer class="main-footer">
-      <div class="container">
+      <div class="footer-container">
     		<p class="hash-tag-visitsedona">#Visitsedona</p>
     		  <ul class="footer-social">
-            <li><a class="social-button" href="https://twitter.com/sedonathebest" title="Мы в Твиттер">Твиттер</a></li>
-    			  <li><a class="social-button" href="https://www.facebook.com/sedonathebest" title="Мы в Фейсбук">Фейсбук</a></li>
-    			  <li><a class="social-button" href="https://www.youtube.com/user/sedonathebest" title="Мы в Ютюб">Ютуб</a></li>
+            <li>
+              <a class="social-button" href="https://twitter.com/sedonathebest" title="Мы в Твиттер">
+                <span class="visually-hidden">Твиттер</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+                    <image width="17" height="15" overflow="visible" xlink:href="t.png"/>
+                    <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+                </svg>
+              </a>
+            </li>
+    			  <li>
+              <a class="social-button" href="https://www.facebook.com/sedonathebest" title="Мы в Фейсбук">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                    <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                </svg>
+              </a>
+            </li>
+    			  <li>
+              <a class="social-button" href="https://www.youtube.com/user/sedonathebest" title="Мы в Ютюб">
+                <span class="visually-hidden">Ютуб</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+                    <image width="20" height="16" overflow="visible" xlink:href="youtube.png"/>
+                    <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+                </svg>
+              </a>
+            </li>
     		  </ul>
     		  <!--Иконки в backgroung-image-->
     		<p class="footer-copyright">
     		  <b>Website by</b>
-    		  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    		  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
     		</p>
     </div>
   	</footer>
 
   	<section class="modal-search">
-        <!-- <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2> -->
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="hotel-search-item">
             <label for="hotel-search-date-arrive">Дата заезда:</label>
