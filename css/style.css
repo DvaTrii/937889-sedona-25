@@ -43,6 +43,7 @@ input[type="radio"].visually-hidden {
 
 
 .page-container {
+  position: relative;
   margin: 0 auto;
   background-color: #ffffff;
   width: 1200px;
@@ -78,7 +79,7 @@ input[type="radio"].visually-hidden {
 .welcome-section {
   background-image: url("../img/bg-mount.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 25%;
 }
 
 
@@ -145,6 +146,14 @@ input[type="radio"].visually-hidden {
 .to-do-list,
 .list-item-container {
   list-style: none;
+}
+
+
+.to-do-list li,
+.container-advantages-grey {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -240,8 +249,17 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.map-image {
+  display: block;
+}
+
 .main-footer {
   opacity: 0.9;
+}
+
+.index-page ~ .main-footer {
+  position: absolute;
+  bottom: 0;
 }
 
 .hash-tag-visitsedona {
@@ -287,42 +305,51 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: #000000;
-  padding-top: 11px;
+  padding-top: 8px;
 }
 
-.footer-copyright a {
-  position: relative;
-}
-
-.footer-copyright a::after {
-  content: url('../img/logo-htmla.svg');
-  position: absolute;
-  top: -12px;
-  left: 8px;
-  height: 41px;
+.footer-copyright .button {
   width: 115px;
+  height: 43px;
+}
+
+.footer-copyright b {
+  align-self: baseline;
+  padding-top: 7px;
+  margin-right: 8px;
+}
+
+.button:hover .svg-logo-htmla {
+  fill: #81b3d2;
+}
+
+.button:active .svg-logo-htmla {
+  fill: #bdbbbc;
 }
 
 .footer-copyright a{
   color: inherit;
 }
 
-.footer-copyright a:hover {
-  color: #81b3d2;
-}
-
-.footer-copyright a:active {
-  color: #bdbbbc;
-}
+/* ===============  стили для form ===========================*/
 
 .modal-search {
+  position: absolute;
+  bottom: 169px;
+  left: 316px;
+  box-sizing: border-box;
+  padding: 55px;
   width: 568px;
-  height: 395px;
   font: inherit;
-  background-color: #ffffff
+  background-color: #ffffff;
 
+}
+
+.modal-search-hide {
+  display: none;
 }
 
 .hotel-search-item input {
@@ -330,17 +357,150 @@ input[type="radio"].visually-hidden {
   height: 38px;
 }
 
-.hotel-search-guest input {
-  width: 144px;
+
+.hotel-search-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-search-item,
+.hotel-search-guest {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 0;
+
+}
+
+.hotel-search-guest {
+  width: 22px;
+}
+
+.buttons-amount {
+  position: relative;
+  cursor: pointer;
+}
+
+.button-adults-decrease::after,
+.button-kids-decrease::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+  top:calc(50% - 1.5px);
+  left:calc(50% - 6px);
+
+}
+
+.button-adults-increase::after,
+.button-kids-increase::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+  top:calc(50% - 1.5px);
+  left:calc(50% - 6px);
+}
+
+.button-adults-increase::before,
+.button-kids-increase::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+  top:calc(50% - 1.5px);
+  left:calc(50% - 6px);
+  transform: rotate(90deg);
+}
+
+.buttons-amount:hover.button-adults-increase::before,
+.buttons-amount:hover.button-kids-increase::before,
+.buttons-amount:hover.button-adults-increase::after,
+.buttons-amount:hover.button-kids-increase::after,
+.buttons-amount:hover.button-adults-decrease::after,
+.buttons-amount:hover.button-kids-decrease::after {
+  background-color: #000000;
+}
+
+.buttons-amount:active.button-adults-increase::before,
+.buttons-amount:active.button-kids-increase::before,
+.buttons-amount:active.button-adults-increase::after,
+.buttons-amount:active.button-kids-increase::after,
+.buttons-amount:active.button-adults-decrease::after,
+.buttons-amount:active.button-kids-decrease::after {
+  background-color: #81b3d2;
+}
+
+
+.buttons-calendar {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 21px;
+  height: 22px;
+  background-color: transparent;
+}
+
+.buttons-calendar:active .calendar {
+  fill: #81b3d2;
+}
+
+.buttons-calendar:hover .calendar {
+  fill: #000000;
+}
+
+.buttons-amount-container {
+  display: flex;
+  width: 114px;
   height: 38px;
+  background-color: #f2f2f2;
+}
+
+.buttons-amount,
+.buttons-amount-container input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+
+
+.hotel-search-form label {
+  padding-top: 8px;
+}
+
+.hotel-search-item {
+  width: 458px;
+}
+
+.hotel-search-guest:last-of-type label {
+  margin-left: 53px;
+}
+
+.hotel-search-guest {
+  width: 229px;
 }
 
 .hotel-search-item input,
 .hotel-search-guest input {
-
+  box-sizing: border-box;
   font: inherit;
   background-color: #f2f2f2;
   border: none;
+  text-align: center;
 }
 
 
@@ -367,6 +527,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #ffffff;
   border: 0;
+  margin-top: 54px;
 }
 
 .button-blue:hover {
@@ -387,7 +548,7 @@ input[type="radio"].visually-hidden {
 .filters {
   background-image: url("../img/bg-filters.jpg");
   background-color: #263940;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -411,25 +572,6 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #ffffff;
 }
-
-/* .filter-range {
-  width: 158px;
-  height: 32px;
-  border: solid 2px #ffffff;
-}
-
-.filter-button {
-  width: 133px;
-  height: 32px;
-  border: solid 2px #ffffff;
-  background-color: transparent;
-  background-repeat: no-repeat;
-}
-
-.filter-button:hover {
-  background-color: #ffffff;
-  color: #000000;
-} */
 
 .sort-select {
   color: #000000;
@@ -483,7 +625,7 @@ ul {
   background-color: #81b3d2;
   text-align: center;
   color: #ffffff;
-  padding: 4px 17px 3px 17px;
+  padding: 5px 17px 4px 17px;
 }
 
 
@@ -494,7 +636,7 @@ ul {
   background-color: #766357;
   text-align: center;
   color: #ffffff;
-  padding: 4px 17px 3px 17px;
+  padding: 5px 17px 4px 17px;
 }
 
 .hotels-item-rating {
@@ -656,21 +798,21 @@ ul {
   content: url('../img/icon-house.svg');
   position: absolute;
   top: -99px;
-  left: 162px;
+  left: 152px;
 }
 
 .to-do-list-2 h3::before {
   content: url('../img/icon-food.svg');
   position: absolute;
   top: -99px;
-  left: 163px;
+  left: 153px;
 }
 
 .to-do-list-3 h3::before {
   content: url('../img/icon-present.svg');
   position: absolute;
   top: -102px;
-  left: 167px;
+  left: 157px;
 }
 
 .list-item-container {
@@ -718,6 +860,12 @@ ul {
   border-bottom: 1px solid #e5e5e5;
 }
 
+hotels-item:last-of-type::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .hotels-list {
   margin: 0;
   padding: 0;
@@ -747,21 +895,20 @@ ul {
 }
 
 .hotels-info-container p {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .hotels-buttons-container {
   box-sizing: border-box;
   margin: 15px auto;
-  /* блочно строчиные отрисовывают пробелы поэтому обнуляем размер шрифта у контейнера но возвращаем его у элемента */
-  /* font-size: 0;   */
+  display: flex;
 }
+
 
 .button-book,
 .button-about {
-  display: inline-block;
   box-sizing: border-box;
-  margin-right: 3px;
+  margin-right: 6px;
 }
 
 
@@ -793,12 +940,34 @@ ul {
 .filter {
   display: flex;
   box-sizing: border-box;
-  padding: 29px 74px 35px 72px;
+  padding: 29px 74px 28px 72px;
 }
 
-.filter-infrastructure {
-
+.filter-infrastructure,
+.filter-hotel-type,
+.filter-infrastructure ul,
+.filter-hotel-type ul {
+  margin: 0;
+  padding: 0;
 }
+
+.filter-infrastructure legend,
+.filter-hotel-type legend {
+  margin-bottom: 22px;
+  margin-right: 115px;
+}
+
+.filter-infrastructure li,
+.filter-hotel-type li {
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.filter-infrastructure li:last-of-type,
+.filter-hotel-type li:last-of-type {
+  margin-bottom: 0;
+}
+
 
 .filter-result {
   display: flex;
@@ -836,13 +1005,11 @@ ul {
   border-bottom:
 }
 
-.filter-arrows svg:hover #arrow-up,
-.filter-arrows svg:hover #arrow-down {
+.filter-arrows:hover .arrow {
   fill: #000000;
 }
 
-.filter-arrows svg:active #arrow-up,
-.filter-arrows svg:active #arrow-down {
+.filter-arrows:active .arrow {
   fill: #81b3d2;
 }
 
@@ -864,6 +1031,36 @@ ul {
 }
 
 
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.filter-input-checkbox + label::before {
+  content: url('../img/checkbox-off.svg');
+  position: absolute;
+  left: -40px;
+  top: -3px;
+  width: 23px;
+  height: 23px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: url('../img/checkbox-on.svg');
+
+  position: absolute;
+  top: -3px;
+  left: -40px;
+
+  width: 27px;
+  height: 23px;
+}
+
 /* ===============  стили для фильтра стоимости ===========================*/
 
 .filter-range {
@@ -871,7 +1068,7 @@ ul {
 }
 
 .filter-range {
-  width: 330px;
+  width: 314px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -888,7 +1085,7 @@ ul {
 .price-controls {
   position: relative;
 
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -914,8 +1111,8 @@ ul {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 21px;
+  padding-top: 6px;
 
   cursor: pointer;
 }
@@ -985,7 +1182,7 @@ ul {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 33px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1006,3 +1203,41 @@ ul {
 
 /* ===============  стили для фильтра стоимости ===========================*/
 /* ===============  end ===========================*/
+
+
+/* ===============  Animation ===========================*/
+
+/* ===============появление формы======================= */
+@keyframes floatup {
+  /* 0% {transform: translateX(1800px);}
+  75% {transform: translateX(-20px);}
+  90% {transform: translateX(15px);}
+  100% {transform: translateX(0);} */
+  0% {opacity: 0;}
+  10% {opacity: 0.1;}
+  20% {opacity: 0.2;}
+  30% {opacity: 0.3;}
+  40% {opacity: 0.4;}
+  50% {opacity: 0.5;}
+  60% {opacity: 0.6;}
+  70% {opacity: 0.7;}
+  80% {opacity: 0.8;}
+  90% {opacity: 0.9;}
+  100% {opacity: 1;}
+}
+
+.modal-search {
+  animation-name: floatup;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.5s;
+}
