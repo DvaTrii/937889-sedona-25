@@ -47,6 +47,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   background-color: #ffffff;
   width: 1200px;
+  box-shadow: 0 0 40px 0 #dbdbdb;
 }
 
 .main-header,
@@ -66,6 +67,11 @@ input[type="radio"].visually-hidden {
 .site-navigation a:hover {
   color: #81b3d2;
 }
+
+.site-navigation a:focus {
+  outline: 2px solid #000000;
+}
+
 
 .site-navigation a:active {
   opacity: 0.3;
@@ -111,7 +117,7 @@ input[type="radio"].visually-hidden {
   height: 256px;
   color: #ffffff;
   background-color: #81b3d2;
-  padding-top: 47px;
+  padding-top: 33px;
   padding-bottom: 65px;
   text-align: center;
   margin: 0;
@@ -126,13 +132,15 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  /* text-align: center; */
+  margin-top: 15px;
 }
 
 .container-advantages p {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 22px;
   /* text-align: center; */
 }
 
@@ -164,6 +172,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #000000;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .to-do-list .item-to-do-list {
@@ -199,6 +208,10 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #333333;
   background-color: #eeeeee;
+
+  margin-top: 24px;
+  margin-bottom: 20px;
+
 }
 
 
@@ -213,6 +226,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #000000;
   background-color: #ffffff;
+  margin-top: 4px;
+  margin-bottom: 27px;
 }
 
 .hotel-search p {
@@ -239,8 +254,15 @@ input[type="radio"].visually-hidden {
   height: 86px;
 }
 
+
+
+
 .button-brown:hover {
   background-color: #604e43;
+}
+
+.button-brown:focus {
+  outline: 2px solid #000000;
 }
 
 
@@ -300,6 +322,10 @@ input[type="radio"].visually-hidden {
   background-color: #669ec0;
 }
 
+.social-button:focus {
+  outline: 2px solid #000000;
+}
+
 .social-button:active {
   background-color: #5496bd;
 }
@@ -326,22 +352,29 @@ input[type="radio"].visually-hidden {
   fill: #81b3d2;
 }
 
+.button:focus {
+  outline: 2px solid #000000;
+}
+
 .button:active .svg-logo-htmla {
   fill: #bdbbbc;
 }
+
 
 .footer-copyright a{
   color: inherit;
 }
 
 /* ===============  стили для form ===========================*/
-
+.map {
+  position: relative;
+}
 .modal-search {
   position: absolute;
-  bottom: 169px;
+  top:0;
   left: 316px;
   box-sizing: border-box;
-  padding: 55px;
+  padding: 54px 50px 53px 50px;
   width: 568px;
   font: inherit;
   background-color: #ffffff;
@@ -357,20 +390,27 @@ input[type="radio"].visually-hidden {
   height: 38px;
 }
 
+.hotel-search-input:focus {
+  outline: 2px solid #000000;
+}
 
 .hotel-search-form {
   display: flex;
   flex-wrap: wrap;
 }
 
-.hotel-search-item,
-.hotel-search-guest {
+.hotel-search-item {
   position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
   margin-top: 0;
+}
 
+.hotel-search-guest {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .hotel-search-guest {
@@ -454,6 +494,18 @@ input[type="radio"].visually-hidden {
   fill: #81b3d2;
 }
 
+.buttons-amount:focus,
+.buttons-calendar:focus,
+.main-header-logo:focus,
+.filter-input-checkbox:focus + label::before,
+.price-controls input:focus,
+.btn-transparent:focus,
+.hotels-link:focus,
+.sort-select:focus,
+.filter-arrows:focus {
+  outline: 2px solid #000000;
+}
+
 .buttons-calendar:hover .calendar {
   fill: #000000;
 }
@@ -486,8 +538,13 @@ input[type="radio"].visually-hidden {
   width: 458px;
 }
 
+.hotel-search-guest label {
+  margin-right: 41px;
+}
+
 .hotel-search-guest:last-of-type label {
   margin-left: 53px;
+  margin-right: 25px;
 }
 
 .hotel-search-guest {
@@ -514,7 +571,6 @@ input[type="radio"].visually-hidden {
 .hotel-search-item input:focus,
 .hotel-search-guest input:focus {
   background-color: transparent;
-  border: solid 2px #e5e5e5;
 }
 
 .search-button {
@@ -527,12 +583,17 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #ffffff;
   border: 0;
-  margin-top: 54px;
+  margin-top: 24px;
+  text-transform: uppercase;
 }
 
 .button-blue:hover {
   background-color: #669ec0;
 }
+.button-blue:focus {
+  outline: 2px solid #000000;
+}
+
 
 .button-blue:active {
   background-color: #5496bd;
@@ -722,7 +783,7 @@ ul {
 
 .slogan-underrated {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 27px;
 }
 
 .heading-reasons {
@@ -731,20 +792,15 @@ ul {
 
 .hotel-search {
   box-sizing: border-box;
-  height: 290px;
+  height: 286px;
   text-align: center;
   margin: 0;
   padding-top: 40px;
 }
 
-.hotel-search h2 {
-  margin-top: 0;
-  margin-bottom: 32px;
-}
-
 .search-info {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .hotel-search-button {
@@ -754,7 +810,7 @@ ul {
 .main-footer {
   box-sizing: border-box;
   height: 120px;
-  padding: 36px 0;
+  padding: 32px 0 27px 0;
 }
 
 .main-footer .footer-container {
@@ -790,8 +846,8 @@ ul {
 .to-do-list li {
   width: 400px;
   text-align: center;
-  padding-top: 165px;
-  padding-bottom: 86px;
+  padding-top: 140px;
+  padding-bottom: 75px;
 }
 
 .to-do-list-1 h3::before {
@@ -824,9 +880,14 @@ ul {
 .list-item-container li {
   width: 400px;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 63px;
+  padding-top: 25px;
+  padding-bottom: 43px;
 }
+
+/* .heading-advantages,
+.heading-to-do-list {
+  margin: 0;
+} */
 
 
 
@@ -959,7 +1020,7 @@ hotels-item:last-of-type::after{
 
 .filter-infrastructure li,
 .filter-hotel-type li {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   margin-left: 40px;
 }
 
@@ -999,10 +1060,6 @@ hotels-item:last-of-type::after{
 
 .filter-result-sort-container:first-of-type {
   margin-right: 40px;
-}
-
-.filter-result a {
-  border-bottom:
 }
 
 .filter-arrows:hover .arrow {
@@ -1209,10 +1266,6 @@ hotels-item:last-of-type::after{
 
 /* ===============появление формы======================= */
 @keyframes floatup {
-  /* 0% {transform: translateX(1800px);}
-  75% {transform: translateX(-20px);}
-  90% {transform: translateX(15px);}
-  100% {transform: translateX(0);} */
   0% {opacity: 0;}
   10% {opacity: 0.1;}
   20% {opacity: 0.2;}
@@ -1228,7 +1281,7 @@ hotels-item:last-of-type::after{
 
 .modal-search {
   animation-name: floatup;
-  animation-duration: 1s;
+  animation-duration: 0.25s;
 }
 
 @keyframes shake {

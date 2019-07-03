@@ -34,12 +34,12 @@ form.addEventListener("submit", function (evt) {//ловим момент отп
   }
 });
 
-window.addEventListener("keydown", function(evt){ //закрываем форму при нажатии на esc
-  if (evt.keyCode === 27) {//код клавиши esc в api
-    if (popup.classList.contains("modal-search-hide")) {
-      evt.preventDefault();
-    } else {
-      popup.classList.remove("modal-search-hide");
-    }
-  }
-});
+// window.addEventListener("keydown", function(evt){ //закрываем форму при нажатии на esc
+//   if (evt.keyCode === 27) {//код клавиши esc в api
+//     if (popup.classList.contains("modal-search-hide")) {
+//       evt.preventDefault();
+//     } else {
+//       popup.classList.remove("modal-search-hide");
+//     }
+//   }
+// });
