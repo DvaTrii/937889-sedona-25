@@ -3,19 +3,21 @@ var popup = document.querySelector(".modal-search");//выбираем окно 
 var dateArrive = popup.querySelector("[name=date-arrive]");//выбираем поле ввода даты приезда
 var form = popup.querySelector(".hotel-search-form");//выбираем саму форму для отлова собития отправки
 var dateLeave = popup.querySelector("[name=date-leave]");//выбираем проле ввода даты выезда
-var adultsAmount = popup.querySelector("[name=adults-number]")//выбор поля ввода количества взрослых отдыхающих
+var adultsAmount = popup.querySelector("[name=adults-number]");//выбор поля ввода количества взрослых отдыхающих
 
+ popup.classList.add("modal-search-hide");// как вызвать эту функцию по загрузке страницы?
 
 hotelSearch.addEventListener("click",function (evt) {//ловим клик по кнопке которая вызывает форму
   evt.preventDefault();// предотвращаем действие по умолчанию, которого сейчас нет
   popup.classList.toggle("modal-search-hide");//присваиваем или снимаем класс который прячет форму
+  // console.log(popup.classList.contains());
   dateArrive.focus();//делаем фокус на дате заезда
 
   popup.classList.remove("modal-error");
 });
 
 
-form.addEventListener("submit", function (evt) {//ловим момент отпрвки формы, не по клику - так как может еще по нажатию ентер с фокуса
+form.addEventListener("submit", function (evt) {//ловим момент отправки формы, не по клику - так как может еще по нажатию ентер с фокуса
   //console.log(dateArrive.value); //выводим в консоль значение поля дата заезда
   //console.log(dateLeave.value);
   if (!dateArrive.value || !dateLeave.value || !adultsAmount.value) {// условие один из полей не введено значение

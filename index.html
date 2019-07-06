@@ -6,19 +6,22 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
   </head>
   <body>
     <div class="page-container">
       <header class="main-header">
-        <a class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
-        </a>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="photo-video.html">Фото и Видео</a></li>
-            <li><a href="site-map.html">Карта штата</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и Видео</a></li>
+            <li><a href="#">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
+            <li class="logo-wrapper">
+                <a class="main-header-logo" href="#">
+                  <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
+                </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -26,11 +29,7 @@
         <section class="welcome-section">
           <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
           <img class="sedona-welcome-picture" src="img/sedona-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
-          <svg  class="welcome-trace" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 57">
-            <path fill="#fff" d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z"/>
-          </svg>
           <p class="visually-hidden">Because the Grand<br>Canyon sucks</p>
-          <!--Изображение гор в background-->
         </section>
         <div class="slogans">
           <p class="slogan-underrated">Седона - небольшой городок в Аризоне,<br>заслуживающий большего</p>
@@ -40,59 +39,58 @@
           <ol class="advantages-list">
             <li class="list-item-1">
               <div class="container-advantages">
-                <h3 class="heading-advantages">Настоящий<br>городок</h3>
+                <h3 class="heading-advantages">Настоящий городок</h3>
                 <p>— №1 —</p>
-                <p>Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
+                <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
               </div>
+              <img class="image-city-view" src="img/feature-picture-1.jpg" width="800" height="256" alt="Вид на улицу города">
             </li>
-            <!--Картинка в backgroung-image-->
             <li class="container-to-do-list">
               <h2 class="visually-hidden">Чем заняться</h2>
               <ul class="to-do-list">
                 <li class="to-do-list-1">
                   <h3 class="heading-to-do-list">Жилье</h3>
-                  <p class="item-to-do-list">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+                  <p class="item-to-do-list">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="to-do-list-2">
                   <h3 class="heading-to-do-list">Еда</h3>
-                  <p class="item-to-do-list">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+                  <p class="item-to-do-list">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="to-do-list-3">
                   <h3 class="heading-to-do-list">Сувениры</h3>
-                  <p class="item-to-do-list">Не только китайского, но и местного<br>производства!</p>
+                  <p class="item-to-do-list">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
-              <!--Иконки в backgroung-image-->
             </li>
             <li class="list-item-2">
+              <img class="image-davil-bridge" src="img/feature-picture-2.jpg" width="800" height="256" alt="Знаменитый мост дьявола">
               <div class="container-advantages">
                 <h3 class="heading-advantages">Там есть<br>Мост дьявола</h3>
                 <p>— №2 —</p>
-                <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </li>
-            <!--Картинка в backgroung-image-->
             <li class="list-item-3">
               <ol class="list-item-container">
                 <li class="list-item-grey">
                   <div class="container-advantages-grey">
-                    <h3 class="heading-advantages">Небольшая<br>площадь</h3>
+                    <h3 class="heading-advantages">Небольшая площадь</h3>
                     <p>— №3 —</p>
-                    <p>Все достопримечательности<br>находятся очень близко</p>
+                    <p>Все достопримечательности находятся очень близко</p>
                   </div>
                 </li>
                 <li class="list-item-grey">
                   <div class="container-advantages-grey">
-                    <h3 class="heading-advantages">Красивая<br>дорога</h3>
+                    <h3 class="heading-advantages">Красивая дорога</h3>
                     <p>— №4 —</p>
-                    <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно</p>
+                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
                   </div>
                 </li>
                 <li class="list-item-grey">
                   <div class="container-advantages-grey">
-                    <h3 class="heading-advantages">Мало<br>туристов</h3>
+                    <h3 class="heading-advantages">Мало туристов</h3>
                     <p>— №5 —</p>
-                    <p>Большинство едет в гранд каньон<br>и толпится там</p>
+                    <p>Большинство едет в гранд каньон и толпится там</p>
                   </div>
                 </li>
               </ol>
@@ -103,7 +101,6 @@
           <h2>Заинтересовались?</h2>
           <p class="search-info">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="hotel-search-button button-brown">Поиск гостиницы в Седоне</button>
-          <!-- Здесь будет форма -->
         </section>
         <section class="map">
           <div class="modal-search">
@@ -111,7 +108,7 @@
             <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
               <p class="hotel-search-item">
                 <label for="hotel-search-date-arrive">Дата заезда:</label>
-                <input class="hotel-search-input" id="hotel-search-date-arrive" type="text" name="date-arrive" value="" placeholder="24 апреля 2017"/>
+                <input class="hotel-search-input" id="hotel-search-date-arrive" type="text" name="date-arrive" value="" placeholder="24 АПРЕЛЯ 2017"/>
                 <button class="buttons-calendar">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                     <path class="calendar" fill="#cacaca" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -121,7 +118,7 @@
               </p>
               <p class="hotel-search-item">
                 <label for="hotel-search-date-leave">Дата выезда:</label>
-                <input class="hotel-search-input" id="hotel-search-date-leave" type="text" name="date-leave" value="" placeholder="04 июля 2017"/>
+                <input class="hotel-search-input" id="hotel-search-date-leave" type="text" name="date-leave" value="" placeholder="04 ИЮЛЯ 2017"/>
                 <button class="buttons-calendar">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                     <path class="calendar" fill="#cacaca" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -145,11 +142,12 @@
                   <button class="buttons-amount button-kids-increase"></button>
                 </div>
               </div>
-              <button class="search-button button-blue">Найти</button>
+              <button class="search-button button-blue" type="submit">Найти</button>
             </form>
           </div>
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <img class="map-image" src="img/map.jpg" alt="Карта местности Седоны">
+          <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104772.72671532919!2d-111.86499745262176!3d34.852515664954055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1562274509087!5m2!1sru!2sru" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <!-- <img class="map-image" src="img/map.jpg" width="1200" height="593" alt="Карта местности Седоны"> -->
         </section>
       </main>
       <footer class="main-footer">
@@ -181,7 +179,6 @@
               </a>
             </li>
           </ul>
-          <!--Иконки в backgroung-image-->
           <p class="footer-copyright">
             <b>Website by</b>
             <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -194,6 +191,7 @@
         </div>
       </footer>
     </div>
+    <!-- <script src="js/script.js"></script> -->
     <script src="js/script.min.js"></script>
   </body>
 </html>

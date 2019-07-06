@@ -5,20 +5,23 @@
     <title>Выбор гостиницы в Седоне</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="page-container">
       <header class="main-header">
-        <a class="main-header-logo" href="index.html">
-        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
-        </a>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="photo-video.html">Фото и Видео</a></li>
-            <li><a href="site-map.html">Карта штата</a></li>
-            <li><a class="site-navigation-current" href="hotels.html">Гостиницы</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и Видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+            <li class="logo-wrapper">
+                <a class="main-header-logo" href="index.html">
+                  <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
+                </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -84,27 +87,27 @@
           <ul class="filter-result-sort-container">
             <li class="filter-result-sort">Сортировка:</li>
             <li class="filter-result-sort">
-              <a class="sort-select" href="">по цене</a>
+              <a class="sort-select filter-active" href="#">по цене</a>
             </li>
             <li class="filter-result-sort">
-              <a class="sort-select" href="">по типу</a>
+              <a class="sort-select" href="#">по типу</a>
             </li>
             <li class="filter-result-sort">
-              <a class="sort-select" href="">по рейтингу</a>
+              <a class="sort-select" href="#">по рейтингу</a>
             </li>
           </ul>
           <ul class="filter-arrows-container">
             <li>
-              <a class="filter-arrows" href="">
+              <a class="filter-arrows" href="" title="сортировка по возрастанию">
                 <svg class="filter-arrows" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path class="arrow" fill="#cacaca" d="M5.5 0L0 10h11z"/>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="filter-arrows" href="">
+              <a class="filter-arrows" href="" title="сортировка по убыванию">
                 <svg class="filter-arrows" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path class="arrow" fill="#cacaca" d="M5.5 10L0 0h11"/>
+                  <path class="arrow filter-active" fill="#cacaca" d="M5.5 10L0 0h11"/>
                 </svg>
               </a>
             </li>
@@ -131,21 +134,29 @@
                   <a class="button-book button-brown" href="">Забронировать</a>
                 </div>
               </div>
-              <div class="hotels-item-class">
-                <ul class="rating-stars">
+              <div class="hotels-item-class four-stars">
+                <!-- <ul class="rating-stars">
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 4 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 4 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 4 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 4 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
-                </ul>
+                </ul> -->
                 <p class="hotels-item-rating">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -167,18 +178,24 @@
                   <a class="button-book button-brown" href="">Забронировать</a>
                 </div>
               </div>
-              <div class="hotels-item-class">
-                <ul class="rating-stars">
+              <div class="hotels-item-class three-stars">
+                <!-- <ul class="rating-stars">
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 3 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 3 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 3 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
-                </ul>
+                </ul> -->
                 <p class="hotels-item-rating">Рейтинг: 8,9</p>
               </div>
             </li>
@@ -200,15 +217,19 @@
                   <a class="button-book button-brown" href="">Забронировать</a>
                 </div>
               </div>
-              <div class="hotels-item-class">
-                <ul class="rating-stars">
+              <div class="hotels-item-class two-stars">
+                <!-- <ul class="rating-stars">
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 2 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
                   <li>
-                    <img src="img/star.svg" width="18" height="17" alt="Класс: 2 звезды">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                      <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                    </svg>
                   </li>
-                </ul>
+                </ul> -->
                 <p class="hotels-item-rating">Рейтинг: 9,2</p>
               </div>
             </li>
